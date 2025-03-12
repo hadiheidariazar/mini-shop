@@ -2,13 +2,14 @@ import React from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { TbMoon, TbSunHigh } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
+import toggleTheme from '../../Features/toggleTheme'
 
 export default function Header() {
     return (
         <header className='flex justify-between items-center gap-x-5 mt-5'>
             <Link to="/" className='brand text-3xl xs:text-4xl'> Mini Shop </Link>
             <div className='flex items-center child:text-2xl child:xs:text-3xl gap-x-6 xs:gap-x-10'>
-                <button>
+                <button onClick={toggleTheme}>
                     <TbMoon className='dark:hidden' />
                     <TbSunHigh className='hidden dark:block' />
                 </button>
