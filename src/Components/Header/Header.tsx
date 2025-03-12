@@ -1,4 +1,3 @@
-import React from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { TbMoon, TbSunHigh } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
