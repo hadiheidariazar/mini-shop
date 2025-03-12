@@ -17,6 +17,9 @@ export default {
         center: true,
         padding: "2rem"
       },
+      aspectRatio: {
+        poster: "10/11"
+      },
       backgroundImage: {
         wave: "linear-gradient(to left, #9cf2ed, #f3f4f6)"
       },
