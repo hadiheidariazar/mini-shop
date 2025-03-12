@@ -1,6 +1,5 @@
 import TitlePage from '../../Components/TitlePage/TitlePage'
 import Header from '../../Components/Header/Header'
-import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 import Card from '../../Components/Card/Card'
 
 export default function Products() {
