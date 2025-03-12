@@ -4,9 +4,36 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
-    extend: {},
+    screens: {
+      'sm': '640px',
+      'md': '769px',
+      'lg': '1024px',
+      'xl': '1280px'
+    },
+    extend: {
+      container: {
+        center: true,
+        padding: "2rem"
+      },
+      backgroundImage: {
+        wave: "linear-gradient(to left, #9cf2ed, #f3f4f6)"
+      },
+      screens: {
+        "xs": "480px",
+        "ipad": "992px"
+      },
+      fontFamily: {
+        cursive: "cursive"
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *')
+      addVariant('child-hover', '& > *:hover')
+    }
+  ],
 }
 
