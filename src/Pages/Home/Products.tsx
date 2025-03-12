@@ -1,7 +1,10 @@
 import React from 'react'
+import TitlePage from '../../Components/TitlePage/TitlePage'
 
 export default function Products() {
   return (
-    <div>Products</div>
+    <>
+        <TitlePage title='Home' />
+    </>
   )
 }
