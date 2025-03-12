@@ -558,6 +558,50 @@ video {
   font-family: cursive;
 }
 
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 769px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -606,6 +650,14 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -638,6 +690,11 @@ video {
   height: 1rem;
 }
 
+.size-auto {
+  width: auto;
+  height: auto;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -658,8 +715,32 @@ video {
   width: 1px;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
 .max-w-48 {
   max-width: 12rem;
+}
+
+.max-w-40 {
+  max-width: 10rem;
+}
+
+.max-w-60 {
+  max-width: 15rem;
+}
+
+.max-w-80 {
+  max-width: 20rem;
+}
+
+.max-w-72 {
+  max-width: 18rem;
 }
 
 .grid-cols-1 {
@@ -819,6 +900,16 @@ video {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-rose-600 {
   --tw-text-opacity: 1;
   color: rgb(225 29 72 / var(--tw-text-opacity, 1));
@@ -929,6 +1020,10 @@ video {
     height: 2rem;
   }
 
+  .xs\:w-72 {
+    width: 18rem;
+  }
+
   .xs\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -948,6 +1043,11 @@ video {
     line-height: 1.25rem;
   }
 
+  .xs\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .child\:xs\:text-3xl > * {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -957,6 +1057,10 @@ video {
 @media (min-width: 640px) {
   .sm\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .sm\:mt-14 {
+    margin-top: 3.5rem;
   }
 
   .sm\:p-8 {
