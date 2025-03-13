@@ -1,5 +1,6 @@
 import { useRoutes } from 'react-router-dom'
 import routes from './routes'
+import ContextCartProvider from './Context/ContextCart'
 
 export default function App() {
 
@@ -7,7 +8,9 @@ export default function App() {
 
   return (
     <>
-      {router}
+      <ContextCartProvider>
+        {router}
+      </ContextCartProvider>
     </>
   )
 }
