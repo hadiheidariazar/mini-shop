@@ -19,7 +19,7 @@ export const ContextCart = createContext({} as ContextCartType)
 
 export default function ContextCartProvider({ children }: ContextCartChildrenProps) {
 
-    const [userCart, setUserCart] = useState<Product[]>([])
+    const [userCart, setUserCart] = useState<Product[]>(([]))
     const [shop, setShop] = useState<Product[]>([])
     const [isPending, setIsPending] = useState<boolean>(false as boolean)
     const [isError, setIsError] = useState<boolean>(false as boolean)
@@ -50,7 +50,7 @@ export default function ContextCartProvider({ children }: ContextCartChildrenPro
     useEffect(() => {
         (async () => {
             setIsPending(true)
-            
+
             try {
                 const res = await fetch('https://fakestoreapi.com/products')
                 const data = (await res.json()) as Product[]
@@ -63,7 +63,16 @@ export default function ContextCartProvider({ children }: ContextCartChildrenPro
 
             setIsPending(false)
         })()
+
+        const savedCart = localStorage.getItem('cart');
+        if (savedCart) {
+            setUserCart(JSON.parse(savedCart) || []);
+        }
     }, [])
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(userCart));
+    }, [userCart]);
 
     return (
         <ContextCart value={{ userCart, shop, addProduct, removeProduct, removeAll, isPending, isError }}>
