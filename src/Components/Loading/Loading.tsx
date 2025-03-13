@@ -6,7 +6,7 @@ type LoadingProps = {
 
 export default function Loading({ isFullPage }: LoadingProps) {
     return (
-        <div className={`loading flex justify-center items-center ${isFullPage ? "h-screen w-full" : "gap-2"}`}>
+        <div className={`loading flex justify-center items-center w-full ${isFullPage ? "h-screen" : "gap-2"}`}>
             <FadeLoader className="child:dark:bg-white-important" />
             {!isFullPage && "Loading..."}
         </div>
