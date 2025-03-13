@@ -53,7 +53,7 @@ export default function Products() {
         </main>
       </div>
       <footer className='fixed bottom-0 right-0 left-0 bg-gray-100 dark:bg-gray-700 text-center p-4 border-t-[1px] border-t-sky-600'>
-        <p> Made with <span className='text-rose-600 dark:text-rose-500'>❤</span> by Hadi Heidariazar </p>
+        <a href='https://github.com/hadiheidariazar' target='_blank'> Made with <span className='text-rose-600 dark:text-rose-500'>❤</span> by Hadi Heidariazar </a>
       </footer>
     </>
   )
