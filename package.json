@@ -11,10 +11,8 @@
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/style/app.css --watch"
   },
   "dependencies": {
-    "@types/react-helmet": "^6.1.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-helmet": "^6.1.0",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.3.0",
     "react-spinners": "^0.15.0",

@@ -1,11 +1,10 @@
-import TitlePage from '../../Components/TitlePage/TitlePage'
 import Header from '../../Components/Header/Header'
 import Card from '../../Components/Card/Card'
 
 export default function Products() {
   return (
     <>
-      <TitlePage title='Home' />
+      <title>Mini Shop - Home</title>
       <div className="container-2xl px-5 sm:px-10">
         <Header />
 

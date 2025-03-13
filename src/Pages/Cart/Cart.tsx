@@ -1,4 +1,3 @@
-import TitlePage from '../../Components/TitlePage/TitlePage'
 import Header from '../../Components/Header/Header'
 import { useState } from 'react'
 import { FaRegTrashCan } from 'react-icons/fa6'
@@ -10,7 +9,7 @@ export default function Cart() {
 
     return (
         <>
-            <TitlePage title='Cart' />
+            <title>Mini Shop - Cart</title>
             <div className="container-2xl px-5 sm:px-10">
                 <Header />
 
